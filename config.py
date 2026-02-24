@@ -40,7 +40,7 @@ MMSEQS_BINARY = "mmseqs"                # Path to mmseqs2 binary (or just "mmseq
 IDENTITY_THRESHOLDS = [0.3, 0.5, 0.7]  # For ablation experiments
 DEFAULT_IDENTITY_THRESHOLD = 0.3       # Default threshold for main pipeline
 EVALUE_THRESHOLD = 1e-5                 # E-value cutoff
-USE_MMSEQS_FALLBACK = True             # Use Python fallback if mmseqs2 not found
+USE_MMSEQS_FALLBACK = False            # Set True to force Python fallback even when mmseqs2 is available
 
 # ── Stage 3: Graph Construction ──────────────────────────────────────────────
 EDGE_WEIGHT_THRESHOLD = 0.3            # Minimum identity to keep an edge
